@@ -1,6 +1,201 @@
 index,name,weight,height,lifespan,population,locations
-1,Lion,420,48,16,20000,"Africa"
-2,Tiger,660,42,20,3900,"Asia"
-3,Elephant,13000,132,70,415000,"Africa,Asia"
-4,Giraffe,2800,228,25,117000,"Africa"
-5,Polar Bear,1500,63,25,26000,"North America,Europe,Asia"   
+1,African Lion,570,48,19,39000,"Africa,Asia"
+2,Siberian Tiger,660,42,15,600,Asia
+3,African Bush Elephant,13400,158,70,415000,Africa
+4,Reticulated Giraffe,4255,216,26,20900,Africa
+5,Polar Bear,1543,63,32,26000,"North America,Europe,Asia"
+6,Jaguar,348,30,20,64000,"South America,Central America,North America"
+7,Leopard,198,31,23,250000,"Africa,Asia"
+8,Snow Leopard,165,24,21,6000,Asia
+9,Cheetah,159,36,12,7100,"Africa,Asia"
+10,Cougar,264,35,18,50000,"North America,South America"
+11,Clouded Leopard,51,20,17,10000,Asia
+12,Sunda Clouded Leopard,55,20,17,5000,Asia
+13,Brown Bear,1500,60,32,200000,"North America,Europe,Asia"
+14,American Black Bear,900,40,30,800000,North America
+15,Asian Black Bear,440,35,25,50000,Asia
+16,Sun Bear,176,28,30,10000,Asia
+17,Sloth Bear,440,35,40,20000,Asia
+18,Spectacled Bear,385,35,25,10000,South America
+19,Giant Panda,330,35,20,1864,Asia
+20,Gray Wolf,175,36,16,300000,"North America,Europe,Asia"
+21,Ethiopian Wolf,43,24,14,440,Africa
+22,African Wild Dog,79,30,12,6600,Africa
+23,Maned Wolf,51,35,15,23600,South America
+24,Bush Dog,18,12,15,15000,South America
+25,Arctic Fox,21,12,14,630000,"North America,Europe,Asia"
+26,Fennec Fox,3,8,14,100000,Africa
+27,Red Fox,31,20,15,10000000,"North America,Europe,Asia,Africa,Australia"
+28,Spotted Hyena,190,36,25,27000,Africa
+29,Striped Hyena,121,32,24,10000,"Africa,Asia"
+30,Brown Hyena,101,31,20,4000,Africa
+31,Aardwolf,30,20,15,31000,Africa
+32,Eastern Gorilla,440,72,40,5000,Africa
+33,Western Gorilla,440,72,40,100000,Africa
+34,Common Chimpanzee,130,66,60,300000,Africa
+35,Bonobo,130,58,50,20000,Africa
+36,Orangutan,220,60,59,100000,Asia
+37,Gelada,44,30,30,200000,Africa
+38,Mandrill,119,32,31,60000,Africa
+39,Baboon,99,32,30,150000,"Africa,Asia"
+40,Proboscis Monkey,53,30,24,7000,Asia
+41,Golden Snub-nosed Monkey,57,26,25,15000,Asia
+42,African Buffalo,2200,65,25,400000,Africa
+43,American Bison,2200,72,23,500000,North America
+44,European Bison,2100,72,28,7000,Europe
+45,Gaur,3300,87,26,21000,Asia
+46,Water Buffalo,2600,72,25,3600,Asia
+47,Yak,2205,72,25,15000,Asia
+48,Common Eland,2094,72,25,136000,Africa
+49,Giant Eland,2094,72,25,13000,Africa
+50,Nilgai,771,59,21,100000,Asia
+51,Greater Kudu,694,63,23,119000,Africa
+52,Gemsbok,660,48,20,373000,Africa
+53,Springbok,105,34,10,2500000,Africa
+54,Thomson's Gazelle,77,28,15,550000,Africa
+55,Impala,168,36,17,2000000,Africa
+56,Wildebeest,640,59,20,1500000,Africa
+57,Hartebeest,440,60,20,362000,Africa
+58,Topi,330,50,20,90000,Africa
+59,Sable Antelope,595,55,17,75000,Africa
+60,Roan Antelope,661,60,17,70000,Africa
+61,Waterbuck,578,60,18,99000,Africa
+62,Markhor,242,45,13,5754,Asia
+63,Alpine Ibex,265,42,15,30000,Europe
+64,Nubian Ibex,143,38,17,4000,"Asia,Africa"
+65,Mountain Goat,309,40,18,100000,North America
+66,Musk Ox,1609,63,25,170000,"North America,Europe"
+67,Saiga Antelope,154,32,12,1000000,"Asia,Europe"
+68,Tibetan Antelope,99,35,10,100000,Asia
+69,Pronghorn,159,42,15,700000,North America
+70,Moose,1543,95,20,1500000,"North America,Europe,Asia"
+71,Elk,1100,72,20,2000000,"North America,Asia"
+72,Red Deer,530,59,20,2000000,"Europe,Asia"
+73,White-tailed Deer,300,48,15,30000000,"North America,South America"
+74,Reindeer,701,59,15,2890000,"North America,Europe,Asia"
+75,Fallow Deer,220,38,16,500000,"Europe,Asia,Africa"
+76,Roe Deer,77,30,14,15000000,"Europe,Asia"
+77,Barasingha,616,56,20,5000,Asia
+78,Père David's Deer,441,50,18,3000,Asia
+79,Mule Deer,460,44,18,4000000,North America
+80,Marsh Deer,330,47,15,40000,South America
+81,Plains Zebra,990,55,25,500000,Africa
+82,Grevy's Zebra,990,63,25,2680,Africa
+83,Mountain Zebra,880,55,20,35000,Africa
+84,African Wild Ass,600,53,25,570,Africa
+85,Onager,660,49,25,600,Asia
+86,Przewalski's Horse,770,56,25,2000,Asia
+87,White Rhinoceros,7920,79,40,15940,Africa
+88,Black Rhinoceros,3091,71,45,6195,Africa
+89,Indian Rhinoceros,7716,73,45,3700,Asia
+90,Sumatran Rhinoceros,2200,59,45,34,Asia
+91,Javan Rhinoceros,5070,72,45,75,Asia
+92,Common Hippopotamus,9920,65,55,115000,Africa
+93,Pygmy Hippopotamus,605,39,43,2500,Africa
+94,Common Warthog,330,30,18,250000,Africa
+95,Giant Forest Hog,606,43,20,20000,Africa
+96,Bushpig,331,39,20,100000,Africa
+97,Baird's Tapir,880,47,30,5000,"Central America,South America"
+98,Malayan Tapir,807,47,30,2500,Asia
+99,Collared Peccary,99,22,24,3000000,"North America,South America"
+100,Southern Elephant Seal,8818,96,23,700000,"Antarctica,South America"
+101,Walrus,3748,63,40,225000,"North America,Europe,Asia"
+102,Steller Sea Lion,2472,62,30,145000,"North America,Asia"
+103,California Sea Lion,860,48,25,200000,North America
+104,Northern Fur Seal,600,43,26,1200000,"North America,Asia"
+105,Leopard Seal,1323,54,26,220000,Antarctica
+106,Bobcat,49,24,16,2500000,North America
+107,Canada Lynx,38,22,17,200000,North America
+108,Eurasian Lynx,99,30,21,50000,"Europe,Asia"
+109,Iberian Lynx,35,25,13,1668,Europe
+110,Caracal,44,22,19,50000,"Africa,Asia"
+111,Serval,40,25,23,100000,Africa
+112,Ocelot,35,20,20,100000,"South America,Central America,North America"
+113,Margay,9,16,20,50000,"South America,Central America"
+114,Fishing Cat,35,16,15,5000,Asia
+115,Pallas's Cat,11,14,12,60000,Asia
+116,Wolverine,71,18,13,300000,"North America,Europe,Asia"
+117,Honey Badger,35,12,26,100000,"Africa,Asia"
+118,European Badger,37,12,19,400000,"Europe,Asia"
+119,American Badger,26,12,14,640000,North America
+120,Sea Otter,99,18,23,125000,"North America,Asia"
+121,Giant Otter,71,20,14,5000,South America
+122,North American River Otter,30,12,21,100000,North America
+123,Eurasian Otter,24,12,16,120000,"Europe,Asia,Africa"
+124,African Civet,44,15,28,100000,Africa
+125,Binturong,71,18,25,10000,Asia
+126,Banded Mongoose,5,10,15,1000000,Africa
+127,Meerkat,2,12,12,1000000,Africa
+128,Fossa,26,14,20,2635,Africa
+129,Okapi,770,72,30,10000,Africa
+130,Common Wombat,88,20,26,200000,Australia
+131,Northern Hairy-nosed Wombat,72,16,25,200,Australia
+132,Aardvark,180,24,23,10000,Africa
+133,Sunda Pangolin,17,10,20,5000,Asia
+134,African Ground Pangolin,40,12,20,100000,Africa
+135,Bactrian Camel,2200,90,50,950,Asia
+136,Dromedary Camel,1521,85,40,14700000,"Africa,Asia"
+137,Llama,440,75,25,4500000,South America
+138,Alpaca,185,60,20,6000000,South America
+139,Guanaco,265,47,20,600000,South America
+140,Vicuña,143,40,15,350000,South America
+141,Blackbuck,95,33,15,50000,Asia
+142,Chinkara,52,26,14,100000,Asia
+143,Takin,772,55,16,6500,Asia
+144,Chamois,121,32,14,400000,"Europe,Asia"
+145,Himalayan Tahr,198,40,14,3500,Asia
+146,Capybara,231,24,12,1000000,South America
+147,North American Beaver,110,16,24,6000000,North America
+148,African Crested Porcupine,66,18,27,1000000,Africa
+149,North American Porcupine,40,18,23,1000000,North America
+150,Patagonian Mara,35,28,15,100000,South America
+151,Red Kangaroo,201,71,27,11000000,Australia
+152,Eastern Grey Kangaroo,145,59,20,16000000,Australia
+153,Common Wallaroo,130,39,19,5000000,Australia
+154,Western Grey Kangaroo,119,59,20,6000000,Australia
+155,Tasmanian Devil,26,14,6,20000,Australia
+156,Quokka,9,18,10,12000,Australia
+157,Platypus,5,6,17,300000,Australia
+158,Bongo,893,55,22,28000,Africa
+159,Sitatunga,275,53,22,170000,Africa
+160,Nyala,284,48,19,32000,Africa
+161,Bushbuck,176,40,17,1000000,Africa
+162,Dibatag,77,36,12,3000,Africa
+163,Gerenuk,115,43,13,95000,Africa
+164,Dik-dik,15,16,10,5000000,Africa
+165,Oribi,31,24,14,750000,Africa
+166,Klipspringer,26,22,15,100000,Africa
+167,Steenbok,26,22,12,1000000,Africa
+168,Common Duiker,26,22,14,3000000,Africa
+169,Coyote,50,24,18,5000000,North America
+170,Dhole,44,22,16,2500,Asia
+171,Black-backed Jackal,26,18,14,700000,Africa
+172,Side-striped Jackal,31,20,14,200000,Africa
+173,Golden Jackal,33,20,16,1000000,"Europe,Asia,Africa"
+174,Asiatic Lion,418,44,20,674,Asia
+175,Bengal Tiger,660,43,19,2967,Asia
+176,Sumatran Tiger,363,35,15,400,Asia
+177,Malayan Tiger,264,37,16,150,Asia
+178,Indochinese Tiger,430,40,16,350,Asia
+179,Red River Hog,285,32,20,100000,Africa
+180,Babirusa,220,32,24,10000,Asia
+181,South American Tapir,705,44,30,3000,South America
+182,Mountain Tapir,550,36,25,2500,South America
+183,Kabomani Tapir,243,32,20,2000,South America
+184,Kinkajou,10,10,40,1000000,"South America,Central America"
+185,White-nosed Coati,18,12,15,1000000,"South America,Central America,North America"
+186,Common Genet,5,9,22,500000,"Africa,Europe"
+187,Large-spotted Civet,20,12,20,100000,Asia
+188,Striped Skunk,14,10,7,10000000,North America
+189,Hog Badger,31,12,14,100000,Asia
+190,Tayra,13,12,18,200000,"South America,Central America,North America"
+191,Zorilla,3,8,13,100000,Africa
+192,Marbled Polecat,3,8,13,40000,"Europe,Asia"
+193,Black-footed Ferret,2,6,12,400,North America
+194,Tibetan Fox,13,14,10,100000,Asia
+195,Bat-eared Fox,11,12,14,600000,Africa
+196,Cape Fox,7,12,9,700000,Africa
+197,Corsac Fox,14,11,12,500000,"Asia,Europe"
+198,Swift Fox,6,12,14,260000,North America
+199,Raccoon Dog,22,14,11,3000000,"Asia,Europe"
+200,Dingo,44,24,10,10000,Australia
