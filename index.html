@@ -1,24 +1,70 @@
 <!DOCTYPE html>
+<!-- Colin Totten — 2/22/2025  -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mammal Guesser</title>
+  <title>Animal Guesser</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/icon.png" />
+  <link rel="apple-touch-icon" href="images/icon.png" />
 </head>
 <body>
 
+  <div class="bg-texture"></div>
+
+  <!-- Welcome popup shown on every page load -->
+  <div id="welcome-overlay">
+    <div id="welcome-modal">
+      <h2>Welcome to<br>Animal Guesser</h2>
+      <p class="welcome-sub">Welcome to Animal Guesser! Each day will feature a daily animal. Your job is to guess several pieces of information about that animal.</p>
+      <div class="welcome-steps">
+        <div class="welcome-step">
+          <span class="step-num">1</span>
+          <span>Drag each slider to your best guess on what the animal is. Then select each continent where you think the animal is located.</span>
+        </div>
+        <div class="welcome-step">
+          <span class="step-num">2</span>
+          <span>The closer your answers are to being correct, the more points you'll receive. Each category awards up to 100 points, with a maximum of 500 points for the entire game. Good luck!</span>
+        </div>
+      </div>
+      <button id="welcome-btn" onclick="closeWelcome()">Let's Play</button>
+    </div>
+  </div>
+
   <header>
-    <h1>Mammal Guesser</h1>
+    <div class="header-inner">
+      <h1>Animal Guesser</h1>
+    </div>
   </header>
 
-  <main id="game">
-    <!-- Daily Game Stuff -->
-    <p>Today's mammal</p>
-    <p>Monkey 🐒</p>
+  <main>
+    <div id="game">
+      <div class="loading">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+      </div>
+    </div>
   </main>
 
-  <script src="game.js"></script>
+  <footer>
+    <p>&copy; Colin Totten &amp; Liam McAfee</p>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/scoring.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/game.js"></script>
+  <script>
+    // Closes the welcome popup
+    function closeWelcome() {
+      document.getElementById("welcome-overlay").classList.add("hidden");
+    }
+  </script>
 
 </body>
 </html>
