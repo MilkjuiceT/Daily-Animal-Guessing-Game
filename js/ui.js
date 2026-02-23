@@ -1,4 +1,4 @@
-// Colin Totten — 2/22/2025 
+// Colin Totten, Liam McAfee — 2/22/2025 
 // UI layer: builds the game board, updates sliders, and renders the results popup
 
 // Builds the full game UI — sliders, continent buttons, and submit button
@@ -34,8 +34,20 @@ function buildGame(animal) {
     <div class="game-header">
       <p class="game-pretitle">Today's animal is...</p>
       <h2 class="game-animal-name">${animal.name}</h2>
+
+    <div class="game-image-wrap" style="${animal.image_url ? "" : "display:none;"}">
+      <img
+        class="game-image"
+        src="${animal.image_url || ""}"
+        alt="Photo of ${animal.name}"
+      />
+      <div class="game-image-attr" style="${animal.attribution ? "" : "display:none;"}">
+        ${animal.attribution || ""}
+      </div>
     </div>
-    <div id="sliders">${slidersHTML}</div>
+  </div>
+
+  <div id="sliders">${slidersHTML}</div>
     <div class="stat-row location-section">
       <div class="stat-header"><label>Where is it found?</label></div>
       <div class="continent-grid">${continentsHTML}</div>
