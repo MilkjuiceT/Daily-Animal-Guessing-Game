@@ -18,7 +18,7 @@ const STATS = [
   },
   {
     key: "height",
-    label: "Height - Max (inches)",
+    label: "Height - Max (ft & in)",
     tiers: [
       { min: 0, max: 20  },
       { min: 0, max: 60  },

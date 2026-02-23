@@ -11,15 +11,18 @@ function buildGame(animal) {
     const pct = ((mid - stat.min) / (stat.max - stat.min)) * 100;
     slidersHTML += `
       <div class="stat-row">
-        <div class="stat-header">
+        <div class="stat-header" style="user-select:none; -webkit-user-select:none;">
           <label for="${stat.key}">${stat.label}</label>
-          <div class="slider-value" id="${stat.key}-val">${formatLabel(mid)}</div>
+          <div class="slider-value" id="${stat.key}-val">${formatLabelForStat(stat.key, mid)}</div>
         </div>
         <input type="range" id="${stat.key}" min="${stat.min}" max="${stat.max}" value="${mid}"
-          style="--val: ${pct}%" oninput="updateSlider(this, '${stat.key}-val', ${stat.min}, ${stat.max})" />
+          style="--val: ${pct}%; user-select:none; -webkit-user-select:none; touch-action:none;"
+          oninput="updateSlider(this, '${stat.key}-val', ${stat.min}, ${stat.max})"
+          onmousedown="event.stopPropagation()"
+          ondragstart="return false" />
         <div class="slider-labels">
-          <span>${formatLabel(stat.min)}</span>
-          <span>${formatLabel(stat.max)}</span>
+          <span>${stat.key === "height" && stat.min === 0 ? '0\"' : formatLabelForStat(stat.key, stat.min)}</span>
+          <span>${formatLabelForStat(stat.key, stat.max)}</span>
         </div>
       </div>`;
   });
@@ -60,7 +63,8 @@ function buildGame(animal) {
 function updateSlider(input, valId, min, max) {
   const pct = ((input.value - min) / (max - min)) * 100;
   input.style.setProperty("--val", pct + "%");
-  document.getElementById(valId).textContent = formatLabel(Number(input.value));
+  const key = input.id;
+  document.getElementById(valId).textContent = formatLabelForStat(key, Number(input.value));
 }
 
 // Formats large numbers into readable labels: 2500000 → 2.5M, 45000 → 45k
@@ -69,6 +73,17 @@ function formatLabel(value) {
   if (value >= 10_000)    return (value / 1_000).toFixed(0) + "k";
   if (value >= 1_000)     return (value / 1_000).toFixed(1).replace(/\.0$/, "") + "k";
   return Number(value).toLocaleString();
+}
+
+// Formats height as ft & in (e.g. 63 → 5ft 3in), always shows both parts
+function formatLabelForStat(key, value) {
+  if (key === "height") {
+    if (value === 0) return '0ft 0in';
+    const feet = Math.floor(value / 12);
+    const inches = Math.round(value % 12);
+    return feet + 'ft ' + inches + 'in';
+  }
+  return formatLabel(value);
 }
 
 // Creates and appends the results popup overlay after the user submits
