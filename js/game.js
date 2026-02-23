@@ -70,8 +70,14 @@ function submitGuess() {
   lockInputs();
 }
 
-// Formats population values as 1.2M or 45k; other stats as plain numbers
+// Formats values for results display — height as feet/inches, population as M/k
 function formatValue(key, value) {
+  if (key === "height") {
+    if (value === 0) return '0ft 0in';
+    const feet = Math.floor(value / 12);
+    const inches = Math.round(value % 12);
+    return feet + 'ft ' + inches + 'in';
+  }
   if (key === "population") {
     if (value >= 1_000_000) return (value / 1_000_000).toFixed(1) + "M";
     if (value >= 1_000)     return (value / 1_000).toFixed(1) + "k";
@@ -88,4 +94,4 @@ function updateStreak(won) {
   streak = won ? (lastPlayed === yesterday.toDateString() ? streak + 1 : 1) : 0;
   localStorage.setItem("streak", streak);
   localStorage.setItem("streakLastPlayed", new Date().toDateString());
-} 
+}
